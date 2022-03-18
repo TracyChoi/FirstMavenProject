@@ -1,0 +1,6 @@
+Feature:Google finding
+
+@Demo1
+Scenario: Google finding
+Given User on google chrome page
+#And User type cypress and search

@@ -16,7 +16,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Random;
 
-public class AIAPartnerUtil {
+public class ProjectUtil {
 	
 	public static synchronized void openUrl(String url) {
 		ChromeDriver driver = DriverContext.getDriver();
@@ -31,7 +31,7 @@ public class AIAPartnerUtil {
 		int i = 0;
 		while(!visible){
 			i++;
-			AIAPartnerUtil.waitForSeconds(1);
+			ProjectUtil.waitForSeconds(1);
 
 			try {
 				visible = (new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xPath))) != null);
@@ -61,7 +61,7 @@ public class AIAPartnerUtil {
         for(String elementName : list){
             try{
 				driver.findElementByXPath(elementName).clear();
-                AIAPartnerUtil.setValue(elementName, value);
+                ProjectUtil.setValue(elementName, value);
                 flag = true;
 				break;
             }catch (Exception e){

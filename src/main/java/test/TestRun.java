@@ -36,7 +36,7 @@ import org.testng.annotations.BeforeSuite;
         },
         features = "src/feature",
         glue = { "stepdefinition" },
-        tags =  "@RT"
+        tags =  "@Demo1"
 )
 public class TestRun extends AbstractTestNGCucumberTests {
     public static ITestContext itc;
