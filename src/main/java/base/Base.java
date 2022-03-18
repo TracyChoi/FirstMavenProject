@@ -5,7 +5,13 @@ import com.aventstack.extentreports.gherkin.model.Scenario;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Proxy;
+
+import driver.MyChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.ITestContext;
+import test.TestRun;
+
+import org.openqa.selenium.Proxy;
 
 public class Base {
     public static Scenario scenario;
@@ -39,42 +45,42 @@ public class Base {
         Base.caseID = caseID;
     }
 
-//    public static void setCapabilities() throws IOException {
-////		String driverPath = System.getProperty("user.dir") + File.separator + "resource" + File.separator + "driver" + File.separator + "chromedriver91.exe";
-//        String driverPath = System.getProperty("user.dir") + File.separator + "resource" + File.separator + "driver" + File.separator + "chromedriver.exe";
-//        System.setProperty("webdriver.chrome.driver", driverPath);
-//
-//        ITestContext itc = test.TestRun.itc;
-////		String headlessFlag = itc.getCurrentXmlTest().getParameter("headlessFlag");
-//        String headlessFlag = "True";
-//
-//        if("".equalsIgnoreCase(headlessFlag) || "True".equalsIgnoreCase(headlessFlag)) {
-//            ChromeOptions options = new ChromeOptions();
-//
-//            //options.addArguments("--proxy-server=10.7.192.136:10938");
-////			options.addArguments("disable-gpu");
-////			options.addArguments("--remote-debugging-port=9222");
-////			options.addArguments("window-size=1920,1080");
-////			options.addArguments("--headless");
-//
-//            DriverContext.setDriver (new MyChromeDriver(options));
-//        }else{
-//
-//            ChromeOptions options = new ChromeOptions();
-//
-//            Proxy proxy = new Proxy();
-//            proxy.setProxyType(Proxy.ProxyType.PAC);
-//            proxy.setProxyAutoconfigUrl("http://pac.zscalertwo.net/aia.com/AIA_HK_PROD.pac");
-//            options.setProxy(proxy);
-//            options.addArguments("--ignore-certificate-errors");
-//            options.addArguments("disable-gpu");
-//            options.addArguments("window-size=1920,1080");
-//            options.addArguments("--headless");
-//
-//            DriverContext.setDriver (new MyChromeDriver(options));
-//
-//        }
-//    }
+    public static void setCapabilities() throws IOException {
+//		String driverPath = System.getProperty("user.dir") + File.separator + "resource" + File.separator + "driver" + File.separator + "chromedriver91.exe";
+        String driverPath = System.getProperty("user.dir") + File.separator + "resource" + File.separator + "driver" + File.separator + "chromedriver.exe";
+        System.setProperty("webdriver.chrome.driver", driverPath);
+
+        ITestContext itc = TestRun.itc;
+//		String headlessFlag = itc.getCurrentXmlTest().getParameter("headlessFlag");
+        String headlessFlag = "True";
+
+        if("".equalsIgnoreCase(headlessFlag) || "True".equalsIgnoreCase(headlessFlag)) {
+            ChromeOptions options = new ChromeOptions();
+
+            //options.addArguments("--proxy-server=10.7.192.136:10938");
+//			options.addArguments("disable-gpu");
+//			options.addArguments("--remote-debugging-port=9222");
+//			options.addArguments("window-size=1920,1080");
+//			options.addArguments("--headless");
+
+            DriverContext.setDriver (new MyChromeDriver(options));
+        }else{
+
+            ChromeOptions options = new ChromeOptions();
+
+            Proxy proxy = new Proxy();
+            proxy.setProxyType(Proxy.ProxyType.PAC);
+            proxy.setProxyAutoconfigUrl("http://pac.zscalertwo.net/aia.com/AIA_HK_PROD.pac");
+            options.setProxy(proxy);
+            options.addArguments("--ignore-certificate-errors");
+            options.addArguments("disable-gpu");
+            options.addArguments("window-size=1920,1080");
+            options.addArguments("--headless");
+
+            DriverContext.setDriver (new MyChromeDriver(options));
+
+        }
+    }
 
     public static void delay(long delaySec) {
         try {
