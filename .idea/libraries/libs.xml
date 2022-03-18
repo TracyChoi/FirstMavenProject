@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/5.0.4/extentreports-5.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/5.0.4/extentreports-5.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
