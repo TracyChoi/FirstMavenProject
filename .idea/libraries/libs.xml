@@ -2,10 +2,16 @@
   <library name="libs">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/5.0.4/extentreports-5.0.4.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/com/aventstack/extentreports/3.1.5" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/5.0.4/extentreports-5.0.4-sources.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/com/aventstack/extentreports/3.1.5" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59-sources.jar!/" />
     </SOURCES>
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/com/aventstack/extentreports/3.1.5" recursive="false" />
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/com/aventstack/extentreports/3.1.5" recursive="false" type="SOURCES" />
   </library>
 </component>

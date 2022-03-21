@@ -46,20 +46,20 @@ public class TestRun extends AbstractTestNGCucumberTests {
     public void beforeSuite(ITestContext itc) throws Exception {
         this.itc = itc;
 
-        try {
-            if (InetAddress.getAllByName("AIA.BIZ").length==0){
-                throw new Exception("Not in AIA internal network, tests aborted");
-            }
-        } catch (Exception e) {
-            throw new Exception("Not in AIA internal network, tests aborted");
-        }
+//        try {
+//            if (InetAddress.getAllByName("AIA.BIZ").length==0){
+//                throw new Exception("Not in AIA internal network, tests aborted");
+//            }
+//        } catch (Exception e) {
+//            throw new Exception("Not in AIA internal network, tests aborted");
+//        }
     }
 
-    @AfterSuite
-    public void afterClass() {
-//		ExtentService.getInstance().setSystemInfo("Hostname", "abc");
-//		ExtentService.getInstance().setSystemInfo("IP", "123.45.67.89");
-    }
+//    @AfterSuite
+//    public void afterClass() {
+////		ExtentService.getInstance().setSystemInfo("Hostname", "abc");
+////		ExtentService.getInstance().setSystemInfo("IP", "123.45.67.89");
+//    }
 
     @BeforeClass
     public static void setup() throws Exception{

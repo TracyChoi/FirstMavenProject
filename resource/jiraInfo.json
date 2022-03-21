@@ -1,0 +1,15 @@
+{
+  "fields": {
+    "project": {
+      "key": "EFORM"
+    },
+    "summary": "Test Execution for Cucumber results",
+    "issuetype": {
+      "id": "100007"
+    },
+    "labels": [
+      "AutoRT"
+    ]
+
+  }
+}

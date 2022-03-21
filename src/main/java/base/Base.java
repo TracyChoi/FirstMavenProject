@@ -47,7 +47,7 @@ public class Base {
 
     public static void setCapabilities() throws IOException {
 //		String driverPath = System.getProperty("user.dir") + File.separator + "resource" + File.separator + "driver" + File.separator + "chromedriver91.exe";
-        String driverPath = System.getProperty("user.dir") + File.separator + "resource" + File.separator + "driver" + File.separator + "chromedriver.exe";
+        String driverPath = System.getProperty("user.dir") + File.separator + "resource" + File.separator + "driver" + File.separator + "chromedriver99.exe";
         System.setProperty("webdriver.chrome.driver", driverPath);
 
         ITestContext itc = TestRun.itc;
