@@ -20,7 +20,7 @@ public class Page1 extends BasePage {
     private final constant.xpath_Locator xpathLocator = new xpath_Locator();
 
     WebDriver driver = DriverContext.getDriver();
-    public void googleChrome() {
+    public void CypressDocPage() {
 //        WebDriver driver = DriverContext.getDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);

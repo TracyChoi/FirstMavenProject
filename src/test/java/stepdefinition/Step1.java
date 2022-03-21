@@ -9,9 +9,9 @@ public class Step1 {
 
     private final Page1 page1 = new Page1();
 
-    @Given("User on google chrome page")
-    public void userOnGoogleChrome() {
-        page1.googleChrome();
+    @Given("User on cypressDoc page")
+    public void userOnCypressDoc() {
+        page1.CypressDocPage();
     }
 
     @And("User type {string}")

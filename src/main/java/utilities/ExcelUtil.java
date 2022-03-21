@@ -22,7 +22,7 @@ public class ExcelUtil {
         XSSFSheet excelWSheet;
 
         DataFormatter dataFormatter = new DataFormatter();
-        String path = "resource/AIAPartner_Admin_Portal.xlsx";
+        String path = "resource/FirstProjectDataExcel.xlsx";
 
         try {
             FileInputStream excelFile = new FileInputStream(path);
